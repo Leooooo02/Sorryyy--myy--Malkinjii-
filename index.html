@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Pasandida Aurat 🎀💗</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  min-height:100vh;
+  font-family:"Trebuchet MS","Comic Sans MS",cursive;
+  background:linear-gradient(135deg,#ffe5f0,#ffd4e6,#f9e6ff);
+  color:#70455a;
+  overflow-x:hidden;
+}
+
+.heart{
+  position:fixed;
+  bottom:-40px;
+  font-size:22px;
+  animation:floatUp 8s linear infinite;
+  opacity:0;
+  pointer-events:none;
+  z-index:0;
+}
+
+@keyframes floatUp{
+  0%{
+    transform:translateY(0) rotate(0deg);
+    opacity:0;
+  }
+
+  15%{
+    opacity:.8;
+  }
+
+  100%{
+    transform:translateY(-110vh) rotate(360deg);
+    opacity:0;
+  }
+}
+
+.container{
+  width:92%;
+  max-width:850px;
+  margin:auto;
+  padding:45px 0;
+  position:relative;
+  z-index:2;
+}
+
+.card{
+  background:rgba(255,255,255,.78);
+  backdrop-filter:blur(15px);
+  -webkit-backdrop-filter:blur(15px);
+  border:2px solid rgba(255,255,255,.9);
+  border-radius:38px;
+  padding:45px 30px;
+  text-align:center;
+
+  box-shadow:
+    0 25px 70px rgba(190,80,130,.20),
+    inset 0 0 30px rgba(255,255,255,.35);
+}
+
+.teddy{
+  font-size:75px;
+  animation:teddyBounce 2.2s infinite;
+}
+
+@keyframes teddyBounce{
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-12px);
+  }
+}
+
+h1{
+  margin-top:12px;
+  font-size:clamp(34px,8vw,62px);
+  color:#d9578c;
+  line-height:1.15;
+}
+
+.subtitle{
+  margin-top:15px;
+  font-size:18px;
+  color:#956178;
+  line-height:1.6;
+}
+
+.ribbon{
+  display:inline-block;
+  margin:28px 0;
+  padding:12px 22px;
+  border-radius:50px;
+
+  background:#fff0f7;
+  color:#c44f82;
+
+  font-weight:bold;
+
+  box-shadow:
+    0 8px 25px rgba(200,80,130,.12);
+}
+
+.message{
+  max-width:680px;
+  margin:25px auto;
+
+  font-size:18px;
+  line-height:1.9;
+}
+
+.highlight{
+  color:#d34e86;
+  font-weight:bold;
+  font-size:21px;
+}
+
+.apology{
+  margin-top:35px;
+  padding:30px 25px;
+
+  background:#fff5fa;
+  border-radius:30px;
+
+  border:2px dashed #efa7c5;
+
+  box-shadow:
+    0 10px 30px rgba(210,80,130,.08);
+}
+
+.apology h2{
+  color:#d2558a;
+  margin-bottom:15px;
+  font-size:25px;
+}
+
+.love-box{
+  margin-top:35px;
+  padding:35px 20px;
+
+  border-radius:32px;
+
+  background:
+    linear-gradient(135deg,#ffedf5,#fff7fb);
+
+  box-shadow:
+    inset 0 0 25px rgba(230,100,150,.08);
+}
+
+.love{
+  font-size:clamp(27px,7vw,46px);
+  line-height:1.4;
+
+  color:#db4f88;
+  font-weight:bold;
+}
+
+.button{
+  border:none;
+
+  margin-top:30px;
+  padding:16px 28px;
+
+  border-radius:50px;
+
+  background:#e9669b;
+  color:white;
+
+  font-family:inherit;
+  font-size:17px;
+
+  cursor:pointer;
+
+  box-shadow:
+    0 10px 28px rgba(216,91,145,.28);
+
+  transition:.3s ease;
+}
+
+.button:hover{
+  transform:scale(1.07);
+  background:#d8548b;
+}
+
+.button:active{
+  transform:scale(.96);
+}
+
+#secret{
+  display:none;
+
+  margin-top:25px;
+  padding:25px;
+
+  background:white;
+
+  border-radius:27px;
+
+  color:#bd4e7d;
+
+  line-height:1.9;
+
+  animation:popIn .5s ease;
+}
+
+@keyframes popIn{
+  from{
+    opacity:0;
+    transform:scale(.85);
+  }
+
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+.promise{
+  margin-top:40px;
+  padding:25px;
+
+  line-height:1.9;
+}
+
+.promise h2{
+  color:#d2558a;
+}
+
+.signature{
+  margin-top:35px;
+
+  color:#d25389;
+
+  font-size:23px;
+  font-weight:bold;
+
+  line-height:1.8;
+}
+
+footer{
+  margin-top:30px;
+
+  font-size:14px;
+  opacity:.65;
+}
+
+.sparkle{
+  display:inline-block;
+  animation:sparkle 1.5s infinite alternate;
+}
+
+@keyframes sparkle{
+  from{
+    transform:scale(1);
+  }
+
+  to{
+    transform:scale(1.15);
+  }
+}
+
+.love-note{
+  margin-top:28px;
+  padding:25px 20px;
+
+  background:rgba(255,255,255,.65);
+
+  border-radius:28px;
+
+  border:1px solid #ffd1e2;
+
+  color:#9b5472;
+
+  font-size:18px;
+  line-height:2;
+}
+
+.big-love{
+  color:#d65089;
+  font-size:23px;
+  font-weight:bold;
+}
+
+@media(max-width:600px){
+
+  .container{
+    padding:25px 0;
+  }
+
+  .card{
+    padding:35px 18px;
+    border-radius:30px;
+  }
+
+  .teddy{
+    font-size:62px;
+  }
+
+  .message{
+    font-size:16px;
+  }
+
+  .apology{
+    padding:25px 17px;
+  }
+
+  .love-note{
+    font-size:16px;
+  }
+}
+</style>
+</head>
+
+
+<body>
+
+<!-- Floating decorations -->
+
+<div class="heart" style="left:5%;animation-delay:0s;">💗</div>
+<div class="heart" style="left:15%;animation-delay:2s;">🎀</div>
+<div class="heart" style="left:27%;animation-delay:4s;">💖</div>
+<div class="heart" style="left:40%;animation-delay:1s;">🫶🏻</div>
+<div class="heart" style="left:55%;animation-delay:5s;">💗</div>
+<div class="heart" style="left:68%;animation-delay:3s;">🎀</div>
+<div class="heart" style="left:80%;animation-delay:6s;">💞</div>
+<div class="heart" style="left:93%;animation-delay:2s;">💗</div>
+
+
+<main class="container">
+
+<section class="card">
+
+
+<div class="teddy">
+🧸🎀
+</div>
+
+
+<h1>
+
+For My Pasandida Aurat
+
+<span class="sparkle">
+💗
+</span>
+
+</h1>
+
+
+<p class="subtitle">
+
+The prettiest madam ji deserves
+the cutest apology 🥹🌷
+
+</p>
+
+
+<div class="ribbon">
+
+⚠️ Attention:
+One very guilty boy has arrived 🥺🎀
+
+</div>
+
+
+<!-- Main apology -->
+
+<div class="message">
+
+<p>
+
+Merii pyaarii madam jiiii... 🥹💗
+
+</p>
+
+<br>
+
+<p>
+
+I knowww I came
+<b>3 hours late</b>...
+
+and I know you're angry with me. 🥺
+
+</p>
+
+<br>
+
+<p>
+
+I was genuinely busy,
+but I also understand that
+you were waiting for me.
+
+I'm really sorry for making
+you feel ignored. 🫶🏻
+
+</p>
+
+<br>
+
+<p>
+
+I never wanted you to feel
+like you weren't important to me,
+
+because you are
+<b>very, very special to me.</b> 💗
+
+</p>
+
+<br>
+
+<p class="highlight">
+
+Sooo...
+please don't stay angry
+with me for too long. 🥹🎀
+
+</p>
+
+</div>
+
+
+<!-- Special apology -->
+
+<div class="apology">
+
+<h2>
+
+🥺 A Special Request From Shaurya 💗
+
+</h2>
+
+
+<p class="message">
+
+Aap meri hona toh mujhe apna
+
+<b>
+baachaaa samajh kaii maaf kar dijiye naa
+merii pyaari madam jii
+</b>
+
+🥹💗🫶🏻
+
+<br><br>
+
+Galti hui toh daant lena...
+
+<br>
+
+Thoda sa gussa bhi kar lena...
+
+<br>
+
+Lekin pleaseee
+mujhse zyada der naraz mat rehna naa. 🥺🎀
+
+<br><br>
+
+Aapki narazgi dekh kar
+main literally...
+
+<br><br>
+
+<span style="font-size:30px;">
+
+🥺👉🏻👈🏻
+
+</span>
+
+<br><br>
+
+...aisa ho jaata hoon. 😭💗
+
+</p>
+
+</div>
+
+
+<!-- Love -->
+
+<div class="love-box">
+
+
+<div class="love">
+
+I LOVEEEE YOUUUUU
+
+<br>
+
+SOOOOO MUCHHHH 💖🎀
+
+</div>
+
+
+<p class="message">
+
+Myyy little princesssss 🥹💗
+
+<br><br>
+
+You are someone who makes
+even the most ordinary moments
+feel special. 🌷
+
+<br><br>
+
+You make me smile,
+you make me feel lucky,
+
+and somehow you manage to stay
+ridiculously adorable even when
+you're angry at me. 😭🎀
+
+<br><br>
+
+And yes...
+
+<br>
+
+Even when you're angry with me,
+
+you're still my favourite person
+to adore, appreciate,
+annoy a little,
+and love a whole lot. 🫶🏻💗
+
+<br><br>
+
+I just want to see
+that beautiful smile again. 🥹🎀
+
+</p>
+
+
+<!-- Extra melting message -->
+
+<div class="love-note">
+
+<p class="big-love">
+
+From yourrrr Shauryaa 💗🎀
+
+</p>
+
+<br>
+
+<p>
+
+In my life,
+you are the one who makes
+everything feel a little more beautiful. 🥹💗
+
+</p>
+
+<br>
+
+<p>
+
+You are the most beautiful
+moment of my life,
+the sweetest part of my days,
+and someone who means
+more to me than I can properly
+put into words. 🌷🎀
+
+</p>
+
+<br>
+
+<p>
+
+You are veryyy important to me,
+and you will always have
+a veryyy special place in my heart. 🫶🏻💗
+
+</p>
+
+<br>
+
+<p>
+
+You are my first priority,
+my favourite person,
+my little princess,
+and one of the biggest reasons
+behind so many of my smiles. 🥹🎀💖
+
+</p>
+
+<br>
+
+<p>
+
+No matter how busy my day gets,
+please never forget...
+
+</p>
+
+<br>
+
+<p class="big-love">
+
+YOU ARE SOOOO SPECIAL TO ME. 💗🎀
+
+</p>
+
+<br>
+
+<p>
+
+And this little heart of mine
+will always have a soft corner
+specially reserved for you. 🥹🫶🏻
+
+</p>
+
+<br>
+
+<p class="big-love">
+
+From yourrrr Shauryaa,
+with all his loveee. 💗🎀
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Secret button -->
+
+<button class="button" onclick="showSecret()">
+
+🎀 Press this if you're still angry 🎀
+
+</button>
+
+
+<!-- Hidden message -->
+
+<div id="secret">
+
+🥺💗
+
+<b>
+Okay okay okayyy...
+</b>
+
+<br><br>
+
+I officially surrender. 🏳️😭💗
+
+<br><br>
+
+No arguments.
+
+<br>
+
+No excuses.
+
+<br><br>
+
+Just me asking my favourite
+madam ji for one tiny little smile. 🥹🫶🏻
+
+<br><br>
+
+And if you're still angry...
+
+<br><br>
+
+I'll just sit here like:
+
+<br><br>
+
+<span style="font-size:35px;">
+
+🧸🥺👉🏻👈🏻
+
+</span>
+
+<br><br>
+
+<b>
+
+Please forgive meee,
+my little princess. 🎀💖
+
+</b>
+
+<br><br>
+
+<span style="font-size:18px;">
+
+— From yourrrr Shauryaa 💗
+
+</span>
+
+</div>
+
+
+<!-- Promise -->
+
+<div class="promise">
+
+<h2>
+
+🌷 One Tiny Promise 🌷
+
+</h2>
+
+<br>
+
+<p>
+
+I can't promise that
+I'll never be busy...
+
+</p>
+
+<br>
+
+<p>
+
+But I can promise that
+I'll try harder to communicate
+properly when I am,
+
+because
+
+<b>
+your feelings matter to me.
+</b>
+
+💗
+
+</p>
+
+<br>
+
+<p>
+
+I never want you to feel like
+you're not important to me.
+
+</p>
+
+<br>
+
+<p>
+
+Because you are.
+
+</p>
+
+<p style="font-size:25px;margin-top:8px;">
+
+Very, very much. 🥹💖
+
+</p>
+
+</div>
+
+
+<!-- Final signature -->
+
+<div class="signature">
+
+With lots and lots and LOTSSS
+of loveee 💗🎀
+
+<br><br>
+
+From yourrrr Shauryaa 🥹🫶🏻
+
+</div>
+
+
+<footer>
+
+Made specially for the most
+pyaari madam ji 🎀💗
+
+</footer>
+
+
+</section>
+
+</main>
+
+
+<script>
+
+function showSecret(){
+
+  const secret =
+  document.getElementById("secret");
+
+  const button =
+  document.querySelector(".button");
+
+
+  if(secret.style.display === "block"){
+
+    secret.style.display = "none";
+
+    button.innerHTML =
+    "🎀 Press this if you're still angry 🎀";
+
+  }
+
+  else{
+
+    secret.style.display = "block";
+
+    button.innerHTML =
+    "💗 Okayyy... one more time? 🎀";
+
+
+    /* Cute heart burst */
+
+    for(let i=0;i<15;i++){
+
+      const heart =
+      document.createElement("div");
+
+      heart.innerHTML =
+      ["💗","💖","💕","🎀","✨","🫶🏻"]
+      [Math.floor(Math.random()*6)];
+
+
+      heart.style.position="fixed";
+      heart.style.left="50%";
+      heart.style.top="55%";
+      heart.style.fontSize="25px";
+      heart.style.zIndex="999";
+      heart.style.pointerEvents="none";
+
+
+      document.body.appendChild(heart);
+
+
+      const x =
+      (Math.random()-.5)*500;
+
+      const y =
+      (Math.random()-.5)*400;
+
+
+      heart.animate(
+
+        [
+          {
+            transform:
+            "translate(-50%,-50%) scale(0)",
+            opacity:1
+          },
+
+          {
+            transform:
+            `translate(
+              calc(-50% + ${x}px),
+              calc(-50% + ${y}px)
+            ) scale(1.4)`,
+
+            opacity:0
+          }
+        ],
+
+        {
+          duration:1200,
+          easing:"ease-out"
+        }
+
+      );
+
+
+      setTimeout(()=>{
+
+        heart.remove();
+
+      },1200);
+
+    }
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
